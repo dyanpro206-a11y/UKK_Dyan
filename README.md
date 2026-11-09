@@ -1,66 +1,422 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 SISTEM INFORMASI PERPUSTAKAAN DIGITAL
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Project-UKK-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Framework-Laravel-red?style=for-the-badge&logo=laravel">
+  <img src="https://img.shields.io/badge/Database-MySQL-orange?style=for-the-badge&logo=mysql">
+  <img src="https://img.shields.io/badge/Status-Development-green?style=for-the-badge">
 </p>
 
-## About Laravel
+<p align="center">
+  <b>Aplikasi Perpustakaan Digital Berbasis Website</b><br>
+  Dibangun untuk memenuhi tugas Uji Kompetensi Keahlian (UKK).
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌐 Informasi Website
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+| Keterangan | Detail |
+|---|---|
+| Nama Project | Sistem Informasi Perpustakaan Digital |
+| Nama Pengembang | Dyan |
+| Kelas | XI TI |
+| Sekolah | SMK Muhammadiyah 2 Bantul |
+| Framework | Laravel |
+| Database | MySQL |
+| Bahasa Pemrograman | PHP |
+| Repository | [GitHub UKK_Dyan](https://github.com/dyanpro206-a11y/UKK_Dyan) |
+| Website | [Kunjungi Website](https://dyanpro206-a11y.github.io/UKK_Dyan/) |
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📖 1. Tentang Aplikasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Sistem Informasi Perpustakaan Digital merupakan aplikasi berbasis website yang dirancang untuk membantu proses pengelolaan data perpustakaan secara digital.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Aplikasi ini bertujuan untuk mempermudah pengelolaan data buku, data anggota, pengguna, serta transaksi peminjaman dan pengembalian buku.
 
-## Laravel Sponsors
+Dengan adanya sistem ini, proses administrasi perpustakaan diharapkan menjadi lebih terstruktur, efektif, dan mudah digunakan.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🎯 Tujuan Pembuatan
 
-### Premium Partners
+1. Mempermudah pengelolaan data buku.
+2. Mempermudah pendataan anggota perpustakaan.
+3. Mengelola transaksi peminjaman dan pengembalian buku.
+4. Mempermudah admin dalam mengelola informasi perpustakaan.
+5. Mengurangi pencatatan data secara manual.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+## ✨ 2. Fitur Aplikasi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 👨‍💻 Admin
 
-## Code of Conduct
+- Login administrator.
+- Dashboard pengelolaan perpustakaan.
+- Mengelola data buku.
+- Mengelola data anggota.
+- Mengelola data pengguna.
+- Mengelola transaksi peminjaman.
+- Mengelola pengembalian buku.
+- Melihat data dan informasi perpustakaan.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 👤 User / Anggota
 
-## Security Vulnerabilities
+- Login pengguna.
+- Melihat informasi buku.
+- Melihat profil pengguna.
+- Melihat informasi transaksi.
+- Mengakses layanan perpustakaan sesuai hak akses.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+*Catatan: Fitur mengikuti rancangan aplikasi dan perlu disesuaikan dengan fitur yang benar-benar sudah diimplementasikan.*
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🛠️ 3. Teknologi yang Digunakan
+
+| Teknologi | Kegunaan |
+|---|---|
+| Laravel | Framework pengembangan website |
+| PHP | Bahasa pemrograman backend |
+| MySQL | Database penyimpanan data |
+| HTML | Membuat struktur halaman |
+| CSS | Mengatur tampilan website |
+| JavaScript | Membuat interaksi website |
+| Bootstrap | Membantu desain antarmuka |
+| Git | Mengelola versi kode |
+| GitHub | Menyimpan repository project |
+| Laragon | Menjalankan server lokal |
+
+---
+
+## 🗄️ 4. Perancangan Database
+
+Database dirancang untuk menghubungkan data pengguna, anggota, buku, dan transaksi sehingga pengelolaan informasi perpustakaan dapat dilakukan secara terstruktur.
+
+### Entitas Database
+
+**1. Pengguna (Users)**
+- id_user (Primary Key)
+- name
+- email
+- password
+- role
+
+**2. Anggota (Anggotas)**
+- id_anggota (Primary Key)
+- id_user (Foreign Key)
+- nama
+- alamat
+- no_telepon
+
+**3. Buku (Bukus)**
+- id_buku (Primary Key)
+- judul_buku
+- pengarang
+- penerbit
+- tahun_terbit
+- stok
+
+**4. Transaksi (Transaksis)**
+- id_transaksi (Primary Key)
+- id_anggota (Foreign Key)
+- id_buku (Foreign Key)
+- tanggal_pinjam
+- tanggal_kembali
+- status
+
+### 📊 ERD (Entity Relationship Diagram)
+
+```mermaid
+erDiagram
+    USERS ||--o| ANGGOTAS : memiliki
+    ANGGOTAS ||--o{ TRANSAKSIS : melakukan
+    BUKUS ||--o{ TRANSAKSIS : tercatat_dalam
+
+    USERS {
+        int id_user PK
+        string name
+        string email
+        string password
+        string role
+    }
+
+    ANGGOTAS {
+        int id_anggota PK
+        int id_user FK
+        string nama
+        string alamat
+        string no_telepon
+    }
+
+    BUKUS {
+        int id_buku PK
+        string judul_buku
+        string pengarang
+        string penerbit
+        int tahun_terbit
+        int stok
+    }
+
+    TRANSAKSIS {
+        int id_transaksi PK
+        int id_anggota FK
+        int id_buku FK
+        date tanggal_pinjam
+        date tanggal_kembali
+        string status
+    }
+```
+
+### Penjelasan Relasi
+
+| Relasi | Penjelasan |
+|---|---|
+| Users - Anggotas | Satu pengguna dapat memiliki satu data anggota |
+| Anggotas - Transaksis | Satu anggota dapat melakukan banyak transaksi |
+| Bukus - Transaksis | Satu buku dapat tercatat dalam banyak transaksi |
+
+---
+
+## 🔄 5. Flowchart Sistem
+
+Flowchart menggambarkan alur kerja aplikasi mulai dari pengguna membuka website, melakukan login, hingga menggunakan fitur sesuai hak akses.
+
+### Flowchart Login dan Penggunaan Sistem
+
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[Buka Website]
+    B --> C[Halaman Login]
+    C --> D[Masukkan Email dan Password]
+    D --> E{Validasi Login}
+
+    E -->|Tidak Valid| F[Pesan Kesalahan]
+    F --> C
+
+    E -->|Valid| G{Periksa Role}
+
+    G -->|Admin| H[Dashboard Admin]
+    G -->|User| I[Dashboard User]
+
+    H --> J[Kelola Data Buku]
+    H --> K[Kelola Data Anggota]
+    H --> L[Kelola Transaksi]
+
+    I --> M[Lihat Informasi Buku]
+    I --> N[Lihat Profil]
+    I --> O[Lihat Transaksi]
+
+    J --> P[Logout]
+    K --> P
+    L --> P
+    M --> P
+    N --> P
+    O --> P
+
+    P --> Q([Selesai])
+```
+
+### Alur Transaksi Peminjaman Buku
+
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[User Memilih Buku]
+    B --> C{Stok Tersedia?}
+    C -->|Tidak| D[Tampilkan Stok Habis]
+    D --> B
+    C -->|Ya| E[Ajukan Peminjaman]
+    E --> F[Admin Memeriksa Permintaan]
+    F --> G{Disetujui?}
+    G -->|Tidak| H[Permintaan Ditolak]
+    G -->|Ya| I[Simpan Data Transaksi]
+    I --> J[Kurangi Stok Buku]
+    J --> K[Proses Peminjaman]
+    K --> L[Pengembalian Buku]
+    L --> M[Perbarui Status dan Stok]
+    M --> N([Selesai])
+```
+
+---
+
+## ⚙️ 6. Cara Instalasi Project
+
+Ikuti langkah berikut untuk menjalankan aplikasi di komputer lokal.
+
+### Persyaratan
+
+- PHP
+- Composer
+- MySQL
+- Laragon
+- Git
+- Web Browser
+
+### Langkah Instalasi
+
+**1. Clone Repository**
+
+```bash
+git clone https://github.com/dyanpro206-a11y/UKK_Dyan.git
+```
+
+**2. Masuk ke Folder Project**
+
+```bash
+cd UKK_Dyan
+```
+
+**3. Install Dependency**
+
+```bash
+composer install
+```
+
+**4. Salin File Environment**
+
+```bash
+cp .env.example .env
+```
+
+Jika menggunakan Windows, file `.env.example` juga bisa disalin secara manual menjadi `.env`.
+
+**5. Generate Application Key**
+
+```bash
+php artisan key:generate
+```
+
+**6. Atur Database**
+
+Buka file `.env`, kemudian sesuaikan konfigurasi database:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=ukk_dyan
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Buat database dengan nama `ukk_dyan` melalui phpMyAdmin.
+
+**7. Jalankan Migration**
+
+```bash
+php artisan migrate
+```
+
+Jika project menggunakan seeder:
+
+```bash
+php artisan db:seed
+```
+
+**8. Jalankan Aplikasi**
+
+```bash
+php artisan serve
+```
+
+Buka browser dan akses:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 📁 7. Struktur Folder Laravel
+
+```text
+UKK_Dyan/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   │
+│   └── Models/
+│
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+│   └── factories/
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── resources/
+│   └── views/
+│
+├── routes/
+│   └── web.php
+│
+├── storage/
+├── tests/
+├── .env.example
+├── artisan
+├── composer.json
+└── README.md
+```
+
+---
+
+## 🔐 8. Keamanan Sistem
+
+Beberapa aspek keamanan yang diterapkan atau direncanakan:
+
+- Autentikasi login pengguna.
+- Pembagian hak akses Admin dan User.
+- Validasi data yang dimasukkan.
+- Penyimpanan password menggunakan hashing Laravel.
+- Penggunaan CSRF Protection.
+- Pembatasan akses halaman berdasarkan role.
+
+---
+
+## 🚀 9. Pengembangan Selanjutnya
+
+Beberapa pengembangan yang dapat dilakukan:
+
+1. Menambahkan fitur pencarian buku.
+2. Menambahkan laporan transaksi.
+3. Menambahkan fitur cetak laporan.
+4. Menambahkan notifikasi peminjaman.
+5. Menambahkan riwayat peminjaman.
+6. Meningkatkan tampilan agar lebih responsif.
+7. Meningkatkan keamanan dan performa aplikasi.
+
+---
+
+## 👨‍🎓 10. Identitas Pengembang
+
+**Nama:** Dyan  
+**Kelas:** XI TI  
+**Sekolah:** SMK Muhammadiyah 2 Bantul  
+**Program Keahlian:** Pengembangan Perangkat Lunak dan Gim (PPLG)
+
+**Project:** Sistem Informasi Perpustakaan Digital
+
+**Tujuan:** Memenuhi tugas Uji Kompetensi Keahlian (UKK) sebagai bentuk penerapan keterampilan dalam pengembangan aplikasi berbasis website.
+
+---
+
+## 📌 11. Penutup
+
+Sistem Informasi Perpustakaan Digital ini dibuat sebagai bentuk penerapan ilmu pemrograman web, pengelolaan database, dan pengembangan aplikasi menggunakan framework Laravel.
+
+Diharapkan aplikasi ini dapat membantu proses pengelolaan perpustakaan menjadi lebih mudah, terstruktur, dan efisien.
+
+---
+
+<p align="center">
+  <b>© 2026 Dyan - UKK SMK Muhammadiyah 2 Bantul</b><br>
+  <i>Built with Laravel ❤️</i>
+</p>
