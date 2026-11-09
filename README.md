@@ -1,297 +1,122 @@
-# 📚 SISTEM INFORMASI PERPUSTAKAAN DIGITAL
+# 📚 Perpustakaan Digital — UKK Dyan
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-UKK-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Framework-Laravel-red?style=for-the-badge&logo=laravel">
-  <img src="https://img.shields.io/badge/Database-MySQL-orange?style=for-the-badge&logo=mysql">
-  <img src="https://img.shields.io/badge/Status-Development-green?style=for-the-badge">
+  <strong>Aplikasi Pengelolaan Perpustakaan Berbasis Web</strong><br>
+  Dibangun menggunakan Laravel 10, PHP, dan MySQL.
 </p>
 
 <p align="center">
-  <b>Aplikasi Perpustakaan Digital Berbasis Website</b><br>
-  Dibangun untuk memenuhi tugas Uji Kompetensi Keahlian (UKK).
+  <a href="https://github.com/dyanpro206-a11y/UKK_Dyan">Repository GitHub</a>
 </p>
 
 ---
 
-## 🌐 Informasi Website
+## 📖 Tentang Project
 
-| Keterangan | Detail |
-|---|---|
-| Nama Project | Sistem Informasi Perpustakaan Digital |
-| Nama Pengembang | Dyan |
-| Kelas | XI TI |
-| Sekolah | SMK Muhammadiyah 2 Bantul |
-| Framework | Laravel |
-| Database | MySQL |
-| Bahasa Pemrograman | PHP |
-| Repository | [GitHub UKK_Dyan](https://github.com/dyanpro206-a11y/UKK_Dyan) |
-| Website | [Kunjungi Website](https://dyanpro206-a11y.github.io/UKK_Dyan/) |
+**Perpustakaan Digital** adalah aplikasi berbasis web untuk membantu proses pengelolaan perpustakaan, mulai dari pendataan buku dan kategori, pengelolaan anggota, peminjaman, pengembalian, hingga pencatatan transaksi dan laporan.
 
----
+Aplikasi memiliki dua jenis hak akses, yaitu **Admin** dan **User/Anggota**. Setiap jenis akun memiliki halaman dan menu sesuai dengan perannya.
 
-## 📖 1. Tentang Aplikasi
+## ✨ Fitur Aplikasi
 
-Sistem Informasi Perpustakaan Digital merupakan aplikasi berbasis website yang dirancang untuk membantu proses pengelolaan data perpustakaan secara digital.
+### Admin
+- Login khusus admin.
+- Dashboard admin.
+- Mengelola data buku (tambah, lihat, ubah, dan hapus).
+- Mengelola kategori buku.
+- Mengelola akun pengguna.
+- Mengelola data peminjaman.
+- Memproses dan mengelola pengembalian buku.
+- Melihat riwayat transaksi.
+- Melihat dan mencetak laporan.
 
-Aplikasi ini bertujuan untuk mempermudah pengelolaan data buku, data anggota, pengguna, serta transaksi peminjaman dan pengembalian buku.
+### User / Anggota
+- Registrasi dan login pengguna.
+- Dashboard anggota.
+- Melihat katalog dan detail buku.
+- Melakukan peminjaman buku.
+- Melihat data peminjaman sendiri.
+- Mengajukan/mengelola proses pengembalian sesuai fitur aplikasi.
+- Melihat dan memperbarui profil.
 
-Dengan adanya sistem ini, proses administrasi perpustakaan diharapkan menjadi lebih terstruktur, efektif, dan mudah digunakan.
-
-### 🎯 Tujuan Pembuatan
-
-1. Mempermudah pengelolaan data buku.
-2. Mempermudah pendataan anggota perpustakaan.
-3. Mengelola transaksi peminjaman dan pengembalian buku.
-4. Mempermudah admin dalam mengelola informasi perpustakaan.
-5. Mengurangi pencatatan data secara manual.
-
----
-
-## ✨ 2. Fitur Aplikasi
-
-### 👨‍💻 Admin
-
-- Login administrator.
-- Dashboard pengelolaan perpustakaan.
-- Mengelola data buku.
-- Mengelola data anggota.
-- Mengelola data pengguna.
-- Mengelola transaksi peminjaman.
-- Mengelola pengembalian buku.
-- Melihat data dan informasi perpustakaan.
-
-### 👤 User / Anggota
-
-- Login pengguna.
-- Melihat informasi buku.
-- Melihat profil pengguna.
-- Melihat informasi transaksi.
-- Mengakses layanan perpustakaan sesuai hak akses.
-
-*Catatan: Fitur mengikuti rancangan aplikasi dan perlu disesuaikan dengan fitur yang benar-benar sudah diimplementasikan.*
-
----
-
-## 🛠️ 3. Teknologi yang Digunakan
+## 🧰 Teknologi
 
 | Teknologi | Kegunaan |
 |---|---|
-| Laravel | Framework pengembangan website |
-| PHP | Bahasa pemrograman backend |
-| MySQL | Database penyimpanan data |
-| HTML | Membuat struktur halaman |
-| CSS | Mengatur tampilan website |
-| JavaScript | Membuat interaksi website |
-| Bootstrap | Membantu desain antarmuka |
-| Git | Mengelola versi kode |
-| GitHub | Menyimpan repository project |
-| Laragon | Menjalankan server lokal |
+| PHP 8.1 atau lebih baru | Bahasa pemrograman backend |
+| Laravel 10 | Framework aplikasi web |
+| MySQL | Database |
+| Blade | Template halaman Laravel |
+| HTML, CSS, JavaScript | Tampilan dan interaksi antarmuka |
+| Vite | Build asset frontend |
+| Cloudinary Laravel | Integrasi pengelolaan gambar/cover buku (jika dikonfigurasi) |
 
----
+## 🗂️ Struktur Folder
 
-## 🗄️ 4. Perancangan Database
-
-Database dirancang untuk menghubungkan data pengguna, anggota, buku, dan transaksi sehingga pengelolaan informasi perpustakaan dapat dilakukan secara terstruktur.
-
-### Entitas Database
-
-**1. Pengguna (Users)**
-- id_user (Primary Key)
-- name
-- email
-- password
-- role
-
-**2. Anggota (Anggotas)**
-- id_anggota (Primary Key)
-- id_user (Foreign Key)
-- nama
-- alamat
-- no_telepon
-
-**3. Buku (Bukus)**
-- id_buku (Primary Key)
-- judul_buku
-- pengarang
-- penerbit
-- tahun_terbit
-- stok
-
-**4. Transaksi (Transaksis)**
-- id_transaksi (Primary Key)
-- id_anggota (Foreign Key)
-- id_buku (Foreign Key)
-- tanggal_pinjam
-- tanggal_kembali
-- status
-
-### 📊 ERD (Entity Relationship Diagram)
-
-```mermaid
-erDiagram
-    USERS ||--o| ANGGOTAS : memiliki
-    ANGGOTAS ||--o{ TRANSAKSIS : melakukan
-    BUKUS ||--o{ TRANSAKSIS : tercatat_dalam
-
-    USERS {
-        int id_user PK
-        string name
-        string email
-        string password
-        string role
-    }
-
-    ANGGOTAS {
-        int id_anggota PK
-        int id_user FK
-        string nama
-        string alamat
-        string no_telepon
-    }
-
-    BUKUS {
-        int id_buku PK
-        string judul_buku
-        string pengarang
-        string penerbit
-        int tahun_terbit
-        int stok
-    }
-
-    TRANSAKSIS {
-        int id_transaksi PK
-        int id_anggota FK
-        int id_buku FK
-        date tanggal_pinjam
-        date tanggal_kembali
-        string status
-    }
+```text
+UKK_Dyan/
+├── app/
+│   ├── Http/Controllers/   # Controller aplikasi
+│   └── Models/             # Model dan relasi database
+├── bootstrap/
+├── config/                 # Konfigurasi Laravel dan layanan
+├── database/
+│   ├── migrations/         # Struktur tabel database
+│   └── seeders/            # Data contoh
+├── public/                 # File publik dan entry point
+├── resources/
+│   └── views/              # Tampilan Blade
+├── routes/
+│   └── web.php             # Routing aplikasi
+├── storage/
+├── tests/
+├── .env.example
+├── artisan
+├── composer.json
+├── package.json
+└── README.md
 ```
 
-### Penjelasan Relasi
-
-| Relasi | Penjelasan |
-|---|---|
-| Users - Anggotas | Satu pengguna dapat memiliki satu data anggota |
-| Anggotas - Transaksis | Satu anggota dapat melakukan banyak transaksi |
-| Bukus - Transaksis | Satu buku dapat tercatat dalam banyak transaksi |
-
----
-
-## 🔄 5. Flowchart Sistem
-
-Flowchart menggambarkan alur kerja aplikasi mulai dari pengguna membuka website, melakukan login, hingga menggunakan fitur sesuai hak akses.
-
-### Flowchart Login dan Penggunaan Sistem
-
-```mermaid
-flowchart TD
-    A([Mulai]) --> B[Buka Website]
-    B --> C[Halaman Login]
-    C --> D[Masukkan Email dan Password]
-    D --> E{Validasi Login}
-
-    E -->|Tidak Valid| F[Pesan Kesalahan]
-    F --> C
-
-    E -->|Valid| G{Periksa Role}
-
-    G -->|Admin| H[Dashboard Admin]
-    G -->|User| I[Dashboard User]
-
-    H --> J[Kelola Data Buku]
-    H --> K[Kelola Data Anggota]
-    H --> L[Kelola Transaksi]
-
-    I --> M[Lihat Informasi Buku]
-    I --> N[Lihat Profil]
-    I --> O[Lihat Transaksi]
-
-    J --> P[Logout]
-    K --> P
-    L --> P
-    M --> P
-    N --> P
-    O --> P
-
-    P --> Q([Selesai])
-```
-
-### Alur Transaksi Peminjaman Buku
-
-```mermaid
-flowchart TD
-    A([Mulai]) --> B[User Memilih Buku]
-    B --> C{Stok Tersedia?}
-    C -->|Tidak| D[Tampilkan Stok Habis]
-    D --> B
-    C -->|Ya| E[Ajukan Peminjaman]
-    E --> F[Admin Memeriksa Permintaan]
-    F --> G{Disetujui?}
-    G -->|Tidak| H[Permintaan Ditolak]
-    G -->|Ya| I[Simpan Data Transaksi]
-    I --> J[Kurangi Stok Buku]
-    J --> K[Proses Peminjaman]
-    K --> L[Pengembalian Buku]
-    L --> M[Perbarui Status dan Stok]
-    M --> N([Selesai])
-```
-
----
-
-## ⚙️ 6. Cara Instalasi Project
-
-Ikuti langkah berikut untuk menjalankan aplikasi di komputer lokal.
+## 🧑‍💻 Instalasi dan Menjalankan Project
 
 ### Persyaratan
 
-- PHP
-- Composer
-- MySQL
-- Laragon
-- Git
-- Web Browser
+Pastikan perangkat sudah memiliki:
+- PHP 8.1+ dan ekstensi PHP yang dibutuhkan Laravel.
+- Composer.
+- MySQL/MariaDB.
+- Node.js dan NPM.
+- Git (opsional, untuk clone repository).
 
-### Langkah Instalasi
-
-**1. Clone Repository**
+### 1. Clone repository
 
 ```bash
 git clone https://github.com/dyanpro206-a11y/UKK_Dyan.git
-```
-
-**2. Masuk ke Folder Project**
-
-```bash
 cd UKK_Dyan
 ```
 
-**3. Install Dependency**
+### 2. Install dependency PHP
 
 ```bash
 composer install
 ```
 
-**4. Salin File Environment**
+### 3. Siapkan file environment
+
+Salin `.env.example` menjadi `.env` (di Windows, bisa menyalinnya melalui File Explorer):
 
 ```bash
 cp .env.example .env
 ```
 
-Jika menggunakan Windows, file `.env.example` juga bisa disalin secara manual menjadi `.env`.
-
-**5. Generate Application Key**
-
-```bash
-php artisan key:generate
-```
-
-**6. Atur Database**
-
-Buka file `.env`, kemudian sesuaikan konfigurasi database:
+Buat database baru melalui phpMyAdmin atau MySQL, misalnya dengan nama `ukk_dyan`. Kemudian sesuaikan konfigurasi database pada file `.env`:
 
 ```env
+APP_NAME="Perpustakaan Digital"
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=http://127.0.0.1:8000
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -300,123 +125,189 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Buat database dengan nama `ukk_dyan` melalui phpMyAdmin.
+Sesuaikan username dan password dengan konfigurasi MySQL di komputer masing-masing.
 
-**7. Jalankan Migration**
+### 4. Generate application key
+
+```bash
+php artisan key:generate
+```
+
+### 5. Jalankan migration
 
 ```bash
 php artisan migrate
 ```
 
-Jika project menggunakan seeder:
+Jika ingin mengisi database dengan data contoh dari seeder, jalankan:
 
 ```bash
 php artisan db:seed
 ```
 
-**8. Jalankan Aplikasi**
+> Perintah seeder menambahkan data contoh ke database. Gunakan hanya pada database pengembangan atau database yang memang disiapkan untuk data demo.
+
+### 6. Siapkan penyimpanan file
+
+```bash
+php artisan storage:link
+```
+
+### 7. Install dan build asset frontend
+
+```bash
+npm install
+npm run build
+```
+
+### 8. Jalankan aplikasi
 
 ```bash
 php artisan serve
 ```
 
-Buka browser dan akses:
+Buka alamat berikut di browser:
 
 ```text
 http://127.0.0.1:8000
 ```
 
----
+## 🗃️ Database dan ERD
 
-## 📁 7. Struktur Folder Laravel
+Database utama aplikasi menggunakan tabel `users`, `kategori_buku`, `buku`, `peminjaman`, dan `transaksi`. Relasi berikut disusun berdasarkan migration dan model pada project.
 
-```text
-UKK_Dyan/
-│
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   └── Middleware/
-│   │
-│   └── Models/
-│
-├── bootstrap/
-├── config/
-├── database/
-│   ├── migrations/
-│   ├── seeders/
-│   └── factories/
-│
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── resources/
-│   └── views/
-│
-├── routes/
-│   └── web.php
-│
-├── storage/
-├── tests/
-├── .env.example
-├── artisan
-├── composer.json
-└── README.md
+```mermaid
+erDiagram
+    USERS ||--o{ PEMINJAMAN : melakukan
+    USERS ||--o{ TRANSAKSI : memiliki
+    KATEGORI_BUKU ||--o{ BUKU : mengelompokkan
+    BUKU ||--o{ PEMINJAMAN : dipinjam_dalam
+    PEMINJAMAN ||--o{ TRANSAKSI : dicatat_dalam
+
+    USERS {
+        bigint user_id PK
+        string username
+        string email
+        string password
+        string nama_lengkap
+        text alamat
+        enum role
+    }
+    KATEGORI_BUKU {
+        bigint kategori_id PK
+        string nama_kategori
+    }
+    BUKU {
+        bigint buku_id PK
+        bigint kategori_id FK
+        string judul
+        string penulis
+        string penerbit
+        year tahun_terbit
+        int stok
+        string cover
+    }
+    PEMINJAMAN {
+        bigint peminjaman_id PK
+        bigint buku_id FK
+        bigint user_id FK
+        int jumlah
+        date tgl_peminjaman
+        date tgl_pengembalian
+        enum status_peminjaman
+    }
+    TRANSAKSI {
+        bigint transaksi_id PK
+        bigint peminjaman_id FK
+        bigint user_id FK
+        enum jenis_transaksi
+        date tgl_transaksi
+        text keterangan
+    }
 ```
 
----
+### Penjelasan Relasi
 
-## 🔐 8. Keamanan Sistem
+- **Users — Peminjaman:** satu pengguna dapat memiliki banyak data peminjaman.
+- **Users — Transaksi:** satu pengguna dapat tercatat pada banyak transaksi.
+- **Kategori Buku — Buku:** satu kategori dapat memiliki banyak buku.
+- **Buku — Peminjaman:** satu buku dapat muncul pada banyak data peminjaman.
+- **Peminjaman — Transaksi:** satu peminjaman dapat memiliki beberapa catatan transaksi.
 
-Beberapa aspek keamanan yang diterapkan atau direncanakan:
+## 🔄 Flowchart Alur Aplikasi
 
-- Autentikasi login pengguna.
-- Pembagian hak akses Admin dan User.
-- Validasi data yang dimasukkan.
-- Penyimpanan password menggunakan hashing Laravel.
-- Penggunaan CSRF Protection.
-- Pembatasan akses halaman berdasarkan role.
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[Halaman Login]
+    B --> C{Sudah punya akun?}
+    C -- Belum --> D[Registrasi]
+    D --> B
+    C -- Sudah --> E[Masukkan Username dan Password]
+    E --> F{Login valid?}
+    F -- Tidak --> B
+    F -- Ya --> G{Peran pengguna}
+    G -- Admin --> H[Dashboard Admin]
+    H --> I[Kelola Buku dan Kategori]
+    H --> J[Kelola Pengguna]
+    H --> K[Kelola Peminjaman dan Pengembalian]
+    H --> L[Lihat/Cetak Laporan]
+    G -- User --> M[Dashboard User]
+    M --> N[Lihat Katalog Buku]
+    N --> O[Ajukan Peminjaman]
+    O --> P[Lihat Status Peminjaman]
+    P --> Q[Proses Pengembalian]
+    I --> R[Logout]
+    J --> R
+    K --> R
+    L --> R
+    Q --> R
+    R --> S([Selesai])
+```
 
----
+## 🔐 Pembagian Hak Akses
 
-## 🚀 9. Pengembangan Selanjutnya
+| Bagian | Admin | User |
+|---|:---:|:---:|
+| Dashboard sesuai role | ✅ | ✅ |
+| Melihat katalog buku | ✅ | ✅ |
+| Mengelola data buku | ✅ | — |
+| Mengelola kategori | ✅ | — |
+| Mengelola akun pengguna | ✅ | — |
+| Mengelola seluruh peminjaman | ✅ | — |
+| Mengajukan peminjaman sendiri | — | ✅ |
+| Melihat peminjaman sendiri | — | ✅ |
+| Mengakses profil sendiri | — | ✅ |
+| Laporan perpustakaan | ✅ | — |
 
-Beberapa pengembangan yang dapat dilakukan:
+## ⚙️ Konfigurasi Tambahan
 
-1. Menambahkan fitur pencarian buku.
-2. Menambahkan laporan transaksi.
-3. Menambahkan fitur cetak laporan.
-4. Menambahkan notifikasi peminjaman.
-5. Menambahkan riwayat peminjaman.
-6. Meningkatkan tampilan agar lebih responsif.
-7. Meningkatkan keamanan dan performa aplikasi.
+Project memiliki konfigurasi Cloudinary untuk pengelolaan cover buku. Jika fitur tersebut digunakan, isi variabel Cloudinary yang diperlukan pada `.env` sesuai akun Cloudinary milik sendiri. Jangan memasukkan API secret ke repository publik.
 
----
+## 🌐 Repository dan Deployment
 
-## 👨‍🎓 10. Identitas Pengembang
+- **GitHub Repository:** https://github.com/dyanpro206-a11y/UKK_Dyan
+- **GitHub Pages Settings:** https://github.com/dyanpro206-a11y/UKK_Dyan/settings/pages
 
-**Nama:** Dyan  
-**Kelas:** XI TI  
-**Sekolah:** SMK Muhammadiyah 2 Bantul  
-**Program Keahlian:** Pengembangan Perangkat Lunak dan Gim (PPLG)
+**Catatan deployment:** GitHub Pages hanya melayani website statis (HTML, CSS, dan JavaScript), sehingga tidak dapat menjalankan backend Laravel atau database MySQL. Untuk menjalankan aplikasi Laravel secara online, gunakan hosting/server yang mendukung PHP dan MySQL, lalu atur document root ke folder `public` Laravel.
 
-**Project:** Sistem Informasi Perpustakaan Digital
+## 👨‍🎓 Identitas Project
 
-**Tujuan:** Memenuhi tugas Uji Kompetensi Keahlian (UKK) sebagai bentuk penerapan keterampilan dalam pengembangan aplikasi berbasis website.
-
----
-
-## 📌 11. Penutup
-
-Sistem Informasi Perpustakaan Digital ini dibuat sebagai bentuk penerapan ilmu pemrograman web, pengelolaan database, dan pengembangan aplikasi menggunakan framework Laravel.
-
-Diharapkan aplikasi ini dapat membantu proses pengelolaan perpustakaan menjadi lebih mudah, terstruktur, dan efisien.
+| Keterangan | Informasi |
+|---|---|
+| Nama Project | Perpustakaan Digital |
+| Nama Pengembang | Dyan |
+| Kegiatan | Uji Kompetensi Keahlian (UKK) |
+| Framework | Laravel 10 |
+| Database | MySQL |
 
 ---
 
 <p align="center">
-  <b>© 2026 Dyan - UKK SMK Muhammadiyah 2 Bantul</b><br>
-  <i>Built with Laravel ❤️</i>
+  Dibuat untuk Project Uji Kompetensi Keahlian (UKK).<br>
+  <strong>Perpustakaan Digital — UKK Dyan</strong>
 </p>
+```
+
+---
+
+**Lisensi dan penggunaan:** project ini dibuat untuk kebutuhan pembelajaran dan pengembangan aplikasi perpustakaan.
